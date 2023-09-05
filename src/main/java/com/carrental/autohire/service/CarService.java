@@ -21,7 +21,7 @@ public class CarService {
 
     public CarResponseDto addCar(CarRequestDto carRequestDto) {
 
-        String insertQuery = "INSERT INTO car (manufacturer, model, year, color, price) VALUES (?, ?, ?, ?,?)";
+        String insertQuery = "INSERT INTO car (manufacturer, model, \"year\", color, price) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = DatabaseConfig.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(insertQuery, PreparedStatement.RETURN_GENERATED_KEYS)) {
