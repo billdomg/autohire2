@@ -10,8 +10,3 @@
 
 To run queries on the autohire database using H2 Console
 
-- Download and install H2 database using window installer.
-- Run H2 Console
-- Login into the database using autohire as user name and password.
-
-
